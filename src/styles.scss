@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+// Importerar variabler.
+@import 'variables';
+
+// Normalisering.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Body.
+body {
+    font: 100% $font-stack;
+    background-color: $light-blue;
+
+    // Rubriker.
+    h1 {
+        text-align: center;
+        padding-top: 1.5rem;
+        color: $white;
+        text-shadow: 3px 3px 3px $black;
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        text-align: center;
+        padding-top: 0.5rem;
+        color: $white;
+        text-shadow: 3px 3px 3px $black;
+        letter-spacing: 3px;
+    }
+
+    // Brödtext.
+   
+}

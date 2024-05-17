@@ -11,7 +11,9 @@ Den här README-filen har skapats för att beskriva momentets syfte och hur lös
 
 ## Konstruktion
 
-...
+Webbplatsen är en så kallad SPA; en webbplats med bara en sida. Den innehåller en komponent för header, en för footer och en för själva innehållet, main. Innehållet består utav en tabell som visar en kurslista bestående av kurskod, kursnamn och progression. Den hämtas via en service från en webbtjänst genom användning av _HttpClient_.
+
+Webbplatsen är stylad med SCSS, en del globalt som normalisering, regler för body och rubriker. Resterande styling är gjord för och i respektive komponents SCSS-fil. Deklarerade variabler och font ligger i en global variables.scss-fil och importeras via _import_ på aktuella sidor. 
 
 ## Utveckling
 Nedan följer en instruktion (på engelska) för hur skapandet och utvecklingen av ett Angular-projekt kan göras. Det förutsätter att Angular är installerat på datorn med det globala kommandot _npm install -g @angular/cli_. 

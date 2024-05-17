@@ -1,0 +1,28 @@
+<div class="container">
+    <form class="form">
+        <label for="searchInput">Filtrera kurslista:</label>
+        <br>
+        <input type="search" id="searchInput" name="search" placeholder="Skriv kursnamn">
+    </form>
+
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th id="code">Kurskod</th>
+                    <th id="name">Kursnamn</th>
+                    <th id="progression">Progression</th>
+                </tr>
+            </thead>
+            <tbody id="course-info">
+                <tr *ngFor="let course of courseList">
+                    <td>{{ course.code.toUpperCase() }}</td>
+                    <td>{{ course.coursename }}</td>
+                    <td>{{ course.progression }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<img [src]="image" alt="En kanin">
