@@ -18,6 +18,7 @@ export class CoursesComponent {
   image: string = "assets/images/rabbit.png";
   filteredCourseList: Course[] = [];
   filterValue: string = "";
+  ascending: boolean = true;
 
   // Konstruktor.
   constructor(private courseService: CourseService) { }
@@ -38,4 +39,33 @@ export class CoursesComponent {
     );
   }
 
+  // Sortering av kurskod i växlande fallande/stigande ordning.
+  sortByCode(): void {
+    if (this.ascending) {
+      this.filteredCourseList.sort((a, b) => a.code.localeCompare(b.code));
+    } else {
+      this.filteredCourseList.sort((a, b) => b.code.localeCompare(a.code));
+    }
+    this.ascending = !this.ascending;
+  }
+
+  // Sortering av kursnamn i växlande fallande/stigande ordning.
+  sortByName(): void {
+    if(this.ascending) {
+      this.filteredCourseList.sort((a, b) => (a.coursename.localeCompare(b.coursename)));
+    } else {
+      this.filteredCourseList.sort((a, b) => (b.coursename.localeCompare(a.coursename)));
+    }
+    this.ascending = !this.ascending;
+  }
+
+  // Sortering av progression i växlande fallande/stigande ordning.
+  sortByProgression(): void {
+    if(this.ascending) {
+      this.filteredCourseList.sort((a, b) => (a.progression.localeCompare(b.progression)));
+    } else {
+      this.filteredCourseList.sort((a, b) => (b.progression.localeCompare(a.progression)));
+    }
+    this.ascending = !this.ascending;
+  }
 }

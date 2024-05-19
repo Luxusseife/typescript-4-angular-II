@@ -9,9 +9,9 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th id="code">Kurskod</th>
-                    <th id="name">Kursnamn</th>
-                    <th id="progression">Progression</th>
+                    <th id="code" (click)="sortByCode()">Kurskod</th>
+                    <th id="name" (click)="sortByName()">Kursnamn</th>
+                    <th id="progression" (click)="sortByProgression()">Progression</th>
                 </tr>
             </thead>
             <tbody id="course-info">
