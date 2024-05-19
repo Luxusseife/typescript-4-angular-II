@@ -1,9 +1,9 @@
 <div class="container">
-    <form class="form">
+    <div class="form">
         <label for="searchInput">Filtrera kurslista:</label>
         <br>
-        <input type="search" id="searchInput" name="search" placeholder="Skriv kursnamn">
-    </form>
+        <input type="text" placeholder="Skriv kursnamn" [(ngModel)]="filterValue" (input)="applyFilter()">
+    </div>
 
     <div class="table-container">
         <table class="table">
@@ -15,7 +15,7 @@
                 </tr>
             </thead>
             <tbody id="course-info">
-                <tr *ngFor="let course of courseList">
+                <tr *ngFor="let course of filteredCourseList">
                     <td>{{ course.code.toUpperCase() }}</td>
                     <td>{{ course.coursename }}</td>
                     <td>{{ course.progression }}</td>
