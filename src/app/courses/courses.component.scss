@@ -17,7 +17,7 @@
 
         input {
             width: 50%;
-            border: 1px solid grey;
+            border: 2px solid $black;
             border-radius: 5px;
             padding: 7px 7px;
             margin-top: 10px;
@@ -26,6 +26,12 @@
         @media (min-width: 769px) {
             input {
                 width: 25%;
+            }
+        }
+
+        @media (min-width: 1921px) {
+            input {
+                width: 15%;
             }
         }
     }
@@ -38,7 +44,8 @@
         // Kurstabell.
         .table {
             margin: 2rem auto;
-            border: 2px solid $light-turquoise;
+            border: 2px solid $turquoise;
+            border-radius: 5px;
 
             th,
             td {
@@ -48,8 +55,8 @@
 
             thead {
                 cursor: pointer;
-                background-color: $light-turquoise;
-                text-shadow: 1px 1px 2px $white;
+                background-color: $turquoise;
+                text-shadow: 2px 1px 2px $white;
             }
 
             tbody tr td {
@@ -64,7 +71,7 @@
     }
 }
 
-// Bild syns inte.
+// Bild syns inte som default.
 img {
     display: none;
 }

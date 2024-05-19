@@ -11,7 +11,7 @@ Den här README-filen har skapats för att beskriva momentets syfte och hur lös
 
 ## Konstruktion
 
-Webbplatsen är en så kallad SPA; en webbplats med bara en sida. Den innehåller en komponent för header, en för footer och en för själva innehållet, main. Innehållet består utav en tabell som visar en kurslista bestående av kurskod, kursnamn och progression. Den hämtas via en service från en webbtjänst genom användning av _HttpClient_.
+Webbplatsen är en så kallad SPA; en *single page application*, dvs. en webbplats med bara en sida. Den innehåller totalt 3 komponenter; en komponent för header, en för footer och en för själva innehållet, main. Innehållet på main består utav en tabell som visar en kurslista bestående av kurskod, kursnamn och progression. Den hämtas via en service från en webbtjänst genom användning av _HttpClient_. Via _data binding_ med _*ngFor_ och _ngModel_ hämtas data och skrivs ut i en _template_ på skärmen. Via "sökfältet" kan man filtrera sökresultatet på kurskod eller kursnamn och sortera listan via klick på rubrikerna i tabellen för kurskod, kursnamn och progression. Dessa uppdateringar sker direkt i gränssnittet utan sidladdning. 
 
 Webbplatsen är stylad med SCSS, en del globalt som normalisering, regler för body och rubriker. Resterande styling är gjord för och i respektive komponents SCSS-fil. Deklarerade variabler och font ligger i en global variables.scss-fil och importeras via _import_ på aktuella sidor. 
 
@@ -49,4 +49,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-**Skapad av Jenny Lind, jeli2308.**
+**_Skapad av Jenny Lind, jeli2308._**
