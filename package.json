@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod && cp _redirects dist/jeli2308-angularII/browser/",
+    "build": "ng build --prod && cp _redirects dist/jeli2308-angular-II/browser/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
